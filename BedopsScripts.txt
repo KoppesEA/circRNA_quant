@@ -1,0 +1,17 @@
+##Bedops command to match nearest feature
+
+gtf2bed < Rattus_norvegicus.Rnor_6.0.104.gtf > Rattus_norvegicus.Rnor_6.0.104.BED
+
+then swapping to 
+
+closest-features --closest Control_BED_Circ.tsv Rattus_norvegicus.Rnor_6.0.104.BED
+
+
+
+gtf2bed < Rattus_norvegicus.Rnor_6.0.104.nohead.gtf > Rattus_norvegicus.Rnor_6.0.104.BED
+
+gtf2bed < Rattus_norvegicus.Rnor_6.0.104.nohead.gtf > Rattus_norvegicus.Rnor_6.0.104.BED
+
+
+closest-features --closest Control_BED_Circ.BED Rattus_norvegicus.Rnor_6.0.104.BED > Rattus_norvegicus.Rnor_circ_annot.bed
+
